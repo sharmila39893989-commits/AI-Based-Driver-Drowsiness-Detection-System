@@ -1,0 +1,69 @@
+{
+  "dataset": {
+    "drowsiness": {
+      "train": {
+        "drowsy": 17879,
+        "non_drowsy": 15556
+      },
+      "test": {
+        "drowsy": 4469,
+        "non_drowsy": 3889
+      }
+    },
+    "eyes": {
+      "train": {
+        "Closed": 617,
+        "Open": 23
+      },
+      "test": {
+        "Closed": 109,
+        "Open": 109
+      }
+    },
+    "yawn": {
+      "train": {
+        "no_yawn": 616,
+        "yawn": 617
+      },
+      "test": {
+        "no_yawn": 109,
+        "yawn": 106
+      }
+    }
+  },
+  "models": {
+    "drowsiness_model.keras": {
+      "input_shape": [
+        128,
+        128,
+        3
+      ],
+      "output_shape": [
+        1
+      ],
+      "num_outputs": 1
+    },
+    "eye_model.h5": {
+      "input_shape": [
+        128,
+        128,
+        3
+      ],
+      "output_shape": [
+        1
+      ],
+      "num_outputs": 1
+    },
+    "yawn_model.keras": {
+      "input_shape": [
+        128,
+        128,
+        3
+      ],
+      "output_shape": [
+        1
+      ],
+      "num_outputs": 1
+    }
+  }
+}
